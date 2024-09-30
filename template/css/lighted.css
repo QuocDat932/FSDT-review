@@ -1,0 +1,53 @@
+.lighted {
+    margin: 0;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.lighted p {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    justify-self: center;
+    padding-bottom: 1rem;
+    font-size: 120%;
+}
+
+.lighted-center {
+    margin: 0;
+    padding-bottom: 6rem;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    animation: glow 0.5s ease-in-out infinite alternate;
+    text-align: center;
+}
+
+.lighted-center span a {
+    font-family: 'Roboto', sans-serif;
+    color: #2d9da9;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    justify-self: center;
+    padding-bottom: 1rem;
+    font-size: 100%;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #2d9da9;
+    }
+
+    to {
+        text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+    }
+}
